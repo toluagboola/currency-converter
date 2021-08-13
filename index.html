@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Currency Converter</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="currency-converter">
+				<h1>Currency Converter</h1>
+
+				<div class="field">
+					<div class="column">
+						<label class="top-label" for="number">Amount to convert:</label>
+						<input
+							type="number"
+							class="form-input"
+							id="number"
+							placeholder="00000"
+						/>
+					</div>
+				</div>
+
+				<div class="field">
+					<div class="column">
+						<div class="select">
+							<label class="label">From:</label>
+							<select name="currency" class="currency"></select>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="select">
+							<label class="label">To:</label>
+							<select name="currency" class="currency"></select>
+						</div>
+					</div>
+				</div>
+
+				<button onClick="checkCurrencies()">Convert</button>
+
+				<div class="output"></div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
