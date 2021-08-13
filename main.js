@@ -20,7 +20,6 @@ async function fetchCurrencies() {
 function displayCurrencies(data) {
 	const currencies = Object.entries(data);
 	const values = Object.values(currencies[0][1]);
-	console.log(values);
 
 	for (let i = 0; i < values.length; i++) {
 		currency[0].innerHTML += `<option value="${values[i].id}">${values[i].id} - ${values[i].currencyName}</option>`;
