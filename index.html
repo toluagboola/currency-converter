@@ -14,10 +14,16 @@
 			href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap"
 			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+			integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="styles.css" />
 		<title>Currency Converter</title>
@@ -26,39 +32,59 @@
 	<body>
 		<div class="container">
 			<div class="currency-converter">
-				<h1>Currency Converter</h1>
+				<div class="main">
+					<h1>Currency Converter</h1>
 
-				<div class="field">
-					<div class="column">
-						<label class="top-label" for="number">Amount to convert:</label>
-						<input
-							type="number"
-							class="form-input"
-							id="number"
-							placeholder="00000"
-						/>
-					</div>
-				</div>
-
-				<div class="field">
-					<div class="column">
-						<div class="select">
-							<label class="label">From:</label>
-							<select name="currency" class="currency"></select>
+					<div class="field">
+						<div class="column">
+							<label class="top-label" for="number">Amount to convert:</label>
+							<input
+								type="number"
+								class="form-input"
+								id="number"
+								placeholder="00000"
+							/>
 						</div>
 					</div>
 
-					<div class="column">
-						<div class="select">
-							<label class="label">To:</label>
-							<select name="currency" class="currency"></select>
+					<div class="field">
+						<div class="column">
+							<div class="select">
+								<label class="label">From:</label>
+								<select name="currency" class="currency"></select>
+							</div>
+						</div>
+
+						<div class="column">
+							<div class="select">
+								<label class="label">To:</label>
+								<select name="currency" class="currency"></select>
+							</div>
 						</div>
 					</div>
+
+					<button onClick="checkCurrencies()">Convert</button>
+
+					<div class="output"></div>
 				</div>
 
-				<button onClick="checkCurrencies()">Convert</button>
+				<div class="links">
+					<p>
+						<a
+							href="https://github.com/toluagboola/currency-converter"
+							target="_blank"
+						>
+							<i class="fab fa-github"></i>
+						</a>
+					</p>
 
-				<div class="output"></div>
+					<p>
+						Built by
+						<a href="https://github.com/toluagboola" target="_blank"
+							>Tolu Agboola</a
+						>
+					</p>
+				</div>
 			</div>
 		</div>
 
